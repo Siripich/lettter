@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For My Special Person</title>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div id="step-0">
+            <div class="heart-icon">❤️</div>
+            <h1 class="title-text">มีบางอย่างอยากบอก...</h1>
+            <p style="font-size: 14px; color: #666;">ใส่รหัสผ่านเพื่อเข้าชม</p>
+            <input type="password" id="passInput" placeholder="วันเกิดของเธอหรือหนังที่ดูเรื่องแรก" class="pass-input">
+            <br>
+            <button class="primary-btn" onclick="checkPassword()">เปิดอ่านจดหมาย</button>
+        </div>
+
+        <div id="step-1" class="hidden">
+            <h1 class="title-text">จดหมายลับจิงๆนะ</h1>
+            <div class="content-box">
+                <p class="tag-line">จากใจเราถึงเธอ</p>
+                <h3>มีเรื่องนึงที่เราอยากบอก...</h3>
+                <p>เข้าใจเรื่องที่เธอคอยเตือนเรามาตลอด... เราขอโทษจริงๆ นะที่ตอนนั้นเอาแต่ใจจนมองข้ามความรู้สึกเธอไป พอย้อนกลับไปคิดถึงได้รู้ว่าตอนนั้นเธอต้องอดทนกับคนนิสัยไม่ดีอย่างเราขนาดไหน
+ขอบคุณนะที่ตอนนั้นยอมทนเพื่อเรามาตลอด เราเสียใจจริงๆ ที่ทำตัวไม่น่ารักจนเสียเธอไป ตอนนี้เราไม่กล้าหวังให้เธอกลับมาทันทีหรอก แค่อยากบอกให้รู้ว่าตอนนี้เรารู้ตัวแล้วจริงๆ และกำลังตั้งใจปรับปรุงตัวเองให้ดีขึ้นเพื่อไม่ให้มันเป็นเหมือนเดิมอีก</p>
+            </div>
+            <button class="primary-btn" onclick="nextStep(2)">หน้าถัดไป</button>
+        </div>
+
+        <div id="step-2" class="hidden">
+            <h1 class="title-text">เราไม่ขอให้เธอกลับมาทันทีหรอก  แค่อยากกลับไปคุยกับเธอจิงๆ เธอโอเคไหม? 🥺</h1>
+            <div style="margin-top: 30px; position: relative; height: 100px;">
+                <button class="primary-btn" onclick="nextStep(3)">ลองคุยกันดูก่อนก็ได้</button>
+                <button id="no-btn" class="secondary-btn" onmouseover="moveButton()">ยังไม่อยากคุย!</button>
+            </div>
+        </div>
+
+        <div id="step-3" class="hidden">
+            <h1 class="title-text">เย้! ❤️</h1>
+            <div class="content-box voucher-box">
+                <p>สัญญานว่าจะไม่ทำตัวเเบบนั้นเเล้ว</p>
+                <h2 class="voucher-title">E-VOUCHER</h2>
+                <p class="voucher-detail">ตามใจทั้งวัน 1 วันเต็ม ✨</p>
+            </div>
+            <p style="font-size: 12px; color: #888;">แคปหน้าจอนี้มาทวงได้เลยนะ!</p>
+            <p style="font-size: 12px; color: #888;">มาตอบในแชทด้วย เค้ารอคำตอบอยู่นะ 🥺</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
